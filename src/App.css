@@ -1,0 +1,345 @@
+
+
+/* Common section */
+
+
+.mdl-layout__header{
+  box-shadow: none;
+}
+.mdl-tabs__tab-bar {
+  margin: 0 auto !important; 
+  border-top: 1px solid rgb(224,224,224);
+}
+.heading-mobile {
+  position: absolute;
+  z-index: 1000;
+  font-size: 18px;
+  font-weight: 600;
+  color: purple;
+  top: -1rem;
+  right: 2rem;
+}
+
+.temp-mobile {
+  position: absolute;
+  z-index: 1000;
+  color: teal;
+  font-size: 12px;
+  top: 2.5rem;
+  right: 2rem;
+}
+
+.mdl-button{
+  font-weight: 700 !important;
+}
+.mdl-layout__drawer .mdl-navigation {
+  position: relative;
+    text-decoration: none;
+    box-sizing: content-box;
+    color: #444;
+    display: flex;
+    /* padding: 10px 0 15px; */
+    padding: 10px 3px;
+}
+
+.projects-grid {
+  display: flex;
+}
+.mdl-layout__header-row {
+  background: white;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  /* box-shadow: 0 2px 5px lightgrey;  */
+}
+
+
+/* .mdl-layout__drawer-button i{
+  color: purple;
+  display: none !important;
+} */
+
+.mdl-layout__header-row .mdl-navigation__link {
+  display: block;
+  color: rgb(255,255,255);
+  line-height: 15px !important; 
+  padding: 10px 24px !important;
+}
+
+
+/* Resume Page css */
+.resume-right-col {
+  background: #27221F;
+  color: white;
+  padding: 2em;
+}
+
+
+
+.mdl-list {
+  margin-left: 50px;
+}
+
+
+/* Landing page css */
+
+.avatar-img {
+  height: 200px;
+  padding-top: 5em;
+ 
+}
+
+.banner-text {
+  background-color:transparent;
+  opacity: .8;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.banner-text h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: purple;
+}
+
+
+.banner-text p {
+  color: teal;
+  font-size: 20px;
+  padding: .5em;
+  margin-bottom: 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  margin: auto;
+}
+
+.social-links i {
+  color: purple;
+  font-size: 3em;
+  padding: 8px;
+}
+
+/* Chart container */
+.chart-container {
+  position: relative;
+  display: flex;
+  flex: 1;
+  width: 50vw;
+  height: 50vh;
+  margin: auto;
+}
+
+.current {
+  border-bottom: 2px solid purple;
+  transition: width .5s ease, purple .5s ease;
+}
+
+
+#pdf{
+  display:flex;
+  flex: 1;
+  margin: 55px auto;
+  width: 600px;
+}
+
+iframe{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+iframe html body {
+  padding: 50px 76px 76px 42px !important;
+}
+
+.mdl-layout .mdl-layout__content {
+  overflow: hidden;
+}
+
+
+
+/* .mdl-layout__drawer{
+ width: 200px !important;
+} */
+.mdl-layout-title{
+  padding-top: 35px;
+ 
+}
+
+.projects-grid {
+  
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  /* margin-top: 40px; */
+  justify-content: center;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  
+  .banner-text h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: purple;
+    padding-bottom: 0; 
+  }
+
+  .banner-text p {
+    color: teal;
+    font-size: 15px;
+    padding: .4em;
+    margin-top: 16px;
+  }
+  
+  .mdl-layout-title{
+    padding-top: 50px;
+   
+  }
+  .chart-container {
+    position: relative;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 80vw;
+    padding-right: 30px;
+  }
+
+  .projects-grid {
+
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    
+  }
+
+  .mdl-layout__drawer-button i {
+    color: purple;
+   display: block;
+  }
+
+  
+}
+
+
+
+@media screen and (min-width: 1024px)   {
+
+  .heading-mobile {
+    position: absolute;
+    z-index: 1000;
+    font-size: 18px;
+    font-weight: 600;
+    color: purple;
+    top: -1rem;
+    right: 2rem;
+  }
+  
+  .temp-mobile {
+    position: absolute;
+    z-index: 1000;
+    color: teal;
+    font-size: 12px;
+    top: 2.5rem;
+    right: 2rem;
+  }
+
+  .mdl-button {
+    min-width: 74px;
+  }
+
+  .mdl-layout__drawer-button i {
+    
+    color: purple;
+  }
+  
+
+}
+
+@media screen and (min-width: 768px)  {
+
+  .mdl-layout-title{
+    padding-top: 20px;
+  }
+
+  .mdl-layout__drawer-button i{
+    color: purple;
+   display: block;
+  }
+
+  
+}
+
+
+@media screen and (min-width: 360px) {
+  .mdl-layout__drawer-button i{
+    color: purple;
+   display: block;
+  }
+
+  .mdl-layout__header-row {
+    top: 0;
+    background: white;
+    position: fixed;
+    z-index: -1;
+    /* box-shadow: 0 2px 5px lightgrey;  */
+  } 
+
+  .chartjs-render-monitor {
+    width: 250px;
+    padding-right: 30px;
+  }
+  .mdl-tabs__tab-bar {
+    margin: 60px auto !important; 
+    border-top: 1px solid rgb(224,224,224);
+  }
+  .mdl-layout__drawer-button {
+    color: purple;
+   display: block;
+  }
+
+}
+
+
+@media screen and (min-width: 375px) {
+ 
+
+  .mdl-layout__drawer-button i{
+    color: purple;
+   display: block;
+  }
+
+  .mdl-layout__header-row {
+    top: 0;
+    background: white;
+    position: fixed;
+    z-index: -1;
+    /* box-shadow: 0 2px 5px lightgrey;  */
+  } 
+
+  .chartjs-render-monitor {
+    width: 250px;
+  }
+
+  .mdl-tabs__tab-bar {
+    margin: 60px auto !important; 
+    border-top: 1px solid rgb(224,224,224);
+  }
+}
+
+
+.mdl-menu__container.is-visible {
+  top:200px !important;
+}
+
