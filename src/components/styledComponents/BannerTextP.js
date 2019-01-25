@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 
-const BannerTextp = styled.p`
+const BannerTextP = styled.p`
     color: teal;
     font-size: 20px;
     padding: .5em;
     margin-bottom: 0;
 `;
 
-export default BannerTextp;
+export default BannerTextP;
