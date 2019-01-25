@@ -4,7 +4,7 @@ import AboutText from './AboutText';
 import Education from './Education';
 import Experience from './Experience';
 import Chart from './chart';
-import Hr from './Hr';
+import Hr from './styledComponents/Hr';
 
 const grid = {
   padding: '50px 15px'

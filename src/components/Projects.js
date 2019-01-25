@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button} from 'react-mdl';
-import CardBackground from './landingspage.png';
-import Background from './quire.png';
-import Circle from './circle.png';
-import PerfectMatch from './perfectmatch.png';
+import CardBackground from './images/landingspage.png';
+import Background from './images/quire.png';
+import Circle from './images/circle.png';
+import PerfectMatch from './images/perfectmatch.png';
 import { FacebookShareButton,LinkedinShareButton } from 'react-share';
 import { FacebookIcon,LinkedinIcon } from 'react-share';
 

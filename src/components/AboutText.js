@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import P from './P';
-import Hr from './Hr';
+import P from './styledComponents/P.js';
+import Hr from './styledComponents/Hr.js';
 
 
 class AboutText extends Component {

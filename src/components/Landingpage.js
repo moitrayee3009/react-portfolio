@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
-import Hr from './Hr';
+import Hr from './styledComponents/Hr';
+import H1 from './styledComponents/H1';
+import BannerTextP from './styledComponents/BannerTextP';
+import BannerText from './styledComponents/BannerText';
+
 
 
 const landingGrid = {
@@ -21,17 +25,17 @@ class Landing extends Component {
           
             <Cell col={12}>
                 <img
-                  src={require('./avatar_r.png')} 
+                  src={require('./images/avatar_r.png')} 
                   alt="avatar"
                   className="avatar-img"
                   />
 
-                <div className="banner-text">
-                  <h1>Full Stack Web Developer</h1>
+                <BannerText>
+                  <H1>Full Stack Web Developer</H1>
 
                   <Hr primary/>
 
-                  <p>HTML5/CSS3 | Bootstrap | JavaScript | React | NodeJS </p>
+                  <BannerTextP>HTML5/CSS3 | Bootstrap | JavaScript | React | NodeJS </BannerTextP>
 
                   <div className="social-links">
                       <a href="mailto:moitrayee3009@gmail.com" className="button button-icon" title="mail: moitrayee3009@gmail.com">
@@ -47,7 +51,7 @@ class Landing extends Component {
                       </a>
                   </div>
             
-                </div>
+                </BannerText>
             
             </Cell>
           
