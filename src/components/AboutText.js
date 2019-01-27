@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import P from './styledComponents/P.js';
-import Hr from './styledComponents/Hr.js';
+
 
 
 class AboutText extends Component {
@@ -8,7 +8,7 @@ class AboutText extends Component {
       return (
         <div>
           <h3 style={{fontsize: '1em' , fontweight: '500', color: 'teal', marginbottom: '0'}}>I'm a Stockholm based full-stack web developer</h3>
-          <Hr />
+          <hr />
           <P>I have serious passion for UI effects, animations and creating dynamic user experiences.</P>
           <P> My goal is to become a successful web developer and work in a company 
             that can offer me different projects so that I can deepen my knowledge within the programming area.</P>

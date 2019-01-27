@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import Hr from './styledComponents/Hr';
 import H1 from './styledComponents/H1';
+import Avatar from './styledComponents/Avatar';
 import BannerTextP from './styledComponents/BannerTextP';
 import BannerText from './styledComponents/BannerText';
 
@@ -24,10 +25,10 @@ class Landing extends Component {
         <Grid style={landingGrid}>
           
             <Cell col={12}>
-                <img
+                <Avatar
                   src={require('./images/avatar_r.png')} 
                   alt="avatar"
-                  className="avatar-img"
+                  // className="avatar-img"
                   />
 
                 <BannerText>

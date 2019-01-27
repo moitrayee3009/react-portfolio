@@ -16,7 +16,7 @@ class About extends Component {
     return(
       <div style={grid}>
         <Grid>
-          <Cell col={4}>
+          <Cell col={4} tablet={12}>
             <AboutText />
             <Hr />
           </Cell>

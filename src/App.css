@@ -2,7 +2,6 @@
 
 /* Common section */
 
-
 .mdl-layout__header{
   box-shadow: none;
 }
@@ -54,10 +53,6 @@
 }
 
 
-/* .mdl-layout__drawer-button i{
-  color: purple;
-  display: none !important;
-} */
 
 .mdl-layout__header-row .mdl-navigation__link {
   display: block;
@@ -83,11 +78,11 @@
 
 /* Landing page css */
 
-.avatar-img {
+/* .avatar-img {
   height: 200px;
   padding-top: 5em;
  
-}
+} */
 
 .social-links {
   display: flex;
@@ -161,20 +156,13 @@ iframe html body {
 
 
 @media screen and (max-width: 768px) {
-
-  
-  .banner-text h1 {
-    font-size: 30px;
-    font-weight: 600;
-    color: purple;
-    padding-bottom: 0; 
+  .heading-mobile {
+    font-size: 25px;
   }
 
-  .banner-text p {
-    color: teal;
-    font-size: 15px;
-    padding: .4em;
-    margin-top: 16px;
+  .temp-mobile {
+    font-size: 16px;
+    top: 2.7rem;
   }
   
   .mdl-layout-title{
@@ -205,6 +193,10 @@ iframe html body {
   .mdl-layout__drawer-button i {
     color: purple;
    display: block;
+  }
+
+  .item1{
+    width: 100%;
   }
 
   
@@ -261,6 +253,14 @@ iframe html body {
 
 
 @media screen and (min-width: 360px) {
+  .heading-mobile {
+    font-size: 18px;
+  }
+
+  .temp-mobile {
+    font-size: 14px;
+    top: 2.7rem;
+  }
   .mdl-layout__drawer-button i{
     color: purple;
    display: block;
@@ -291,7 +291,14 @@ iframe html body {
 
 
 @media screen and (min-width: 375px) {
- 
+  .heading-mobile {
+    font-size: 18px;
+  }
+
+  .temp-mobile {
+    font-size: 14px;
+    top: 2.7rem;
+  }
 
   .mdl-layout__drawer-button i{
     color: purple;
