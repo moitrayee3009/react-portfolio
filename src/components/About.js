@@ -10,6 +10,12 @@ const grid = {
   padding: '50px 15px'
 };
 
+const rightColum = {
+  background: '#27221F',
+  color: 'white',
+  padding: '2em'
+};
+
 class About extends Component {
  
   render() {
@@ -20,7 +26,7 @@ class About extends Component {
             <AboutText />
             <Hr />
           </Cell>
-          <Cell className="resume-right-col" col={8}>
+          <Cell style={rightColum} col={8}>
             <h3>Skills</h3>
             <Chart />
             <Hr />

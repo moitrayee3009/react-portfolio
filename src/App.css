@@ -61,28 +61,9 @@
   padding: 10px 24px !important;
 }
 
-
-/* Resume Page css */
-.resume-right-col {
-  background: #27221F;
-  color: white;
-  padding: 2em;
-}
-
-
-
 .mdl-list {
   margin-left: 50px;
 }
-
-
-/* Landing page css */
-
-/* .avatar-img {
-  height: 200px;
-  padding-top: 5em;
- 
-} */
 
 .social-links {
   display: flex;
@@ -124,6 +105,7 @@ iframe{
   display: flex;
   flex: 1;
   justify-content: center;
+  overflow: scroll;
 }
 
 iframe html body {
@@ -135,10 +117,6 @@ iframe html body {
 }
 
 
-
-/* .mdl-layout__drawer{
- width: 200px !important;
-} */
 .mdl-layout-title{
   padding-top: 35px;
  
@@ -149,7 +127,6 @@ iframe html body {
   display: flex;
   flex: 1;
   flex-direction: row;
-  /* margin-top: 40px; */
   justify-content: center;
 }
 

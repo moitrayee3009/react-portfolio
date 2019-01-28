@@ -35,7 +35,11 @@ class Chart extends Component {
                                   display: false,
                                   drawOnChartArea: false,
                                   drawTicks: false
-                                }
+                                },
+                                ticks: {
+                                    padding: 10,
+                                        }
+                                
                             }],
                             yAxes: [{
                                 gridLines: {
@@ -55,7 +59,7 @@ class Chart extends Component {
                         labels: {        
                             fontColor: '#000',
                             fontSize: 16,
-                        },
+                        }
                        
                     }}
                 />

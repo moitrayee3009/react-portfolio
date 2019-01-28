@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import { Header, Layout, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './components/Main';
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'; 
+import { Key } from './Key';
 
 
-const API = 'http://api.openweathermap.org/data/2.5/weather?q=Stockholm,se&APPID=e8513a6ba96817e0c3cc60039808f171';
+const API = Key;
 
 const headerTextStyle = {
     textDecoration: 'none', 
