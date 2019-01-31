@@ -52,7 +52,7 @@ class App extends Component {
         fetch(API)
         .then((res) => res.json())
         .then((json) => {
-            this.setState({temperature: (json.main.temp-273.15).toFixed(2)})
+            this.setState({temperature: (json.main.temp-273.15).toFixed(1)})
         })
         this.handleResize();
         this.handleResizeTemp();
