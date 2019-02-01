@@ -28,6 +28,7 @@ class App extends Component {
     constructor(){
         super()
         this.state = {
+            city: '',
             temperature: '',
             showMenu: false,
             js:true
@@ -52,7 +53,7 @@ class App extends Component {
         fetch(API)
         .then((res) => res.json())
         .then((json) => {
-            this.setState({temperature: (json.main.temp-273.15).toFixed(1)})
+            this.setState({city: (json.name),temperature: (json.main.temp-273.15).toFixed(1)})
         })
         this.handleResize();
         this.handleResizeTemp();
@@ -74,7 +75,7 @@ class App extends Component {
 
     handleResizeTemp = () => {
         const windowWidth = window.innerWidth;
-        return windowWidth <= 1024 ? <p className="temp-mobile">{`Stockholm   ${this.state.temperature}°C` }</p> : null;
+        return windowWidth <= 1024 ? <p className="temp-mobile">{`${this.state.city}, ${this.state.temperature}°C` }</p> : null;
     }
 
    
@@ -90,7 +91,7 @@ class App extends Component {
                          
                         title={<NavLink 
                         style={headerTextStyle} 
-                        to="/">Moitrayee Choudhury<p style={{color: 'teal',fontSize: '14px'}}>Stockholm, <span style={{color:'purple',fontSize: '14px'}}> {this.state.temperature ? this.state.temperature : null}°C </span> .</p></NavLink>}scroll>
+                    to="/">Moitrayee Choudhury<p style={{color: 'teal',fontSize: '14px'}}>{this.state.city}, <span style={{color:'purple',fontSize: '14px'}}> {this.state.temperature ? this.state.temperature : null}°C </span> .</p></NavLink>}scroll>
                         
                         <Navigation>
                             <NavLink exact activeClassName="current" to='/' style={navLink}>Home</NavLink>

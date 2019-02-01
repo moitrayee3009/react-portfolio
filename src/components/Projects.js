@@ -45,7 +45,16 @@ const button = {
   
 }
 
-
+const textArea = {
+    height: '40px',
+    color: 'rgba(0,0,0, 0.54)',
+    fontSize: '1rem',
+    lineHeight: '18px',
+    overflow: 'hidden',
+    padding: '8px 16px 20px 16px',
+    width: '90%'
+    
+};
 
 const ShareStyle = {display: 'flex',
   justifyContent: 'space-around',
@@ -114,13 +123,13 @@ const titleLinkedin= 'LinkedIn';
   if(this.state.activeTab === 0) {
     return (
       <div> 
-        <div className="projects-grid">
+        <div className="projects-grid " >
         
 
           {/* Project 1 */}
           <Card shadow={5} style={{minWidth: '450', margin: '10px 40px'}}>
             <CardTitle style={styles}> LandingPage </CardTitle>
-            <CardText>
+            <CardText style={textArea}>
               After started to study Frontend Development in KYH yrkeshögskola, this was my first project with JavaScript and Google map's API.
             </CardText>
             <CardActions border style={{display: 'flex'}}>
@@ -158,9 +167,9 @@ const titleLinkedin= 'LinkedIn';
           {/* Project 2 */}
           <Card shadow={5} style={{minWidth: '450', margin: '10px 40px'}}>
             <CardTitle style={styles2} > Quire </CardTitle>
-            <CardText>
-              First team-project where we've created a browser-based notebook named Quire.
-              Where you can save notes in localStorage with tags and even can mark as favorite.
+            <CardText style={textArea}>
+              As first team-project, we've created a browser-based notebook Quire, 
+              Where you can save your notes with tags and favorite marking. 
             </CardText>
             <CardActions border style={{display: 'flex'}}>
               <Button style={button} onClick={this.handleClickGithuQuire} colored>GitHub</Button> 
@@ -196,7 +205,7 @@ const titleLinkedin= 'LinkedIn';
           {/* Project 3 */}
           <Card shadow={5} style={{minWidth: '450', margin: '10px 40px'}}>
             <CardTitle style={styles3}> music-funProject </CardTitle>
-            <CardText>
+            <CardText style={textArea}>
               This is a key-board based fun music project. I did this when I started to learn JavaScript with udemy.
             </CardText>
             <CardActions border style={{display: 'flex'}}>
@@ -242,7 +251,7 @@ const titleLinkedin= 'LinkedIn';
         {/* Project 1 */}
         <Card shadow={5} style={{minWidth: '450', margin: '10px 40px'}} >
           <CardTitle style={styles4}>  </CardTitle>
-          <CardText>
+          <CardText style={textArea}>
             This is a project which I did when I started to learn BootStrap with udemy.
           </CardText>
           <CardActions border style={{display: 'flex'}}>

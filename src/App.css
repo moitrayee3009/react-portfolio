@@ -130,7 +130,12 @@ iframe html body {
   justify-content: center;
 }
 
-
+@media (max-width: 839px) and (min-width: 480px){ 
+.mdl-cell--12-col, .mdl-cell--12-col-tablet.mdl-cell--12-col-tablet {
+    width: calc(100% - 16px);
+    margin-top: -20px;
+}
+}
 
 @media screen and (max-width: 768px) {
   .heading-mobile {
@@ -295,7 +300,7 @@ iframe html body {
   }
 
   .mdl-tabs__tab-bar {
-    margin: 60px auto !important; 
+    margin: 60px auto 50px auto !important; 
     border-top: 1px solid rgb(224,224,224);
   }
 }
