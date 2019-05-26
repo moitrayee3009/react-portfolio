@@ -11,15 +11,15 @@ const grid = {
 };
 
 const rightColum = {
-  background: '#27221F',
-  color: 'white',
+  background: 'white',
+  color: 'black',
   padding: '2em'
 };
 
 class About extends Component {
- 
+
   render() {
-    return(
+    return (
       <div style={grid}>
         <Grid>
           <Cell col={4} tablet={12}>
