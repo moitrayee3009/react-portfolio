@@ -84,15 +84,7 @@ class Projects extends Component {
   state = { activeTab: 0 }
 
 
-  handleClickGithubLandingpage(e) {
-    e.preventDefault();
-    window.open('https://github.com/moitrayee3009/LandingPage', "_blank");
-  }
 
-  handleClickGithuQuire(e) {
-    e.preventDefault();
-    window.open('https://github.com/moitrayee3009/Quire', "_blank");
-  }
 
   clickToLandingpage(e) {
     e.preventDefault();
@@ -109,19 +101,41 @@ class Projects extends Component {
     window.open('http://tip-tap.surge.sh/', "_blank");
   }
 
-  clickToCircleGithub(e) {
-    e.preventDefault();
-    window.open('https://github.com/moitrayee3009/music-funProject', "_blank");
-  }
+
 
   clickToPerfectMatch(e) {
     e.preventDefault();
     window.open('http://purfect-match.surge.sh/', "_blank");
   }
 
-  clickToPerfectMatchGithub(e) {
+
+
+  // GitHub Links
+
+  handleClickGithubLandingpage(e) {
+    e.preventDefault();
+    window.open('https://github.com/moitrayee3009/LandingPage', "_blank");
+  }
+
+  handleClickGithuQuire(e) {
+    e.preventDefault();
+    window.open('https://github.com/moitrayee3009/Quire', "_blank");
+  }
+
+  handleClickGithuCircle(e) {
+    e.preventDefault();
+    window.open('https://github.com/moitrayee3009/music-funProject', "_blank");
+  }
+
+  handleClickGithubPerfectMatch(e) {
     e.preventDefault();
     window.open('https://github.com/moitrayee3009/BootStrap-PerfectMatch', "_blank");
+  }
+
+
+  handleClickGithubSwedishSummer(e) {
+    e.preventDefault();
+    window.open('https://github.com/moitrayee3009/swedishsummer', "_blank");
   }
 
   handleCheck(e) {
@@ -220,7 +234,7 @@ class Projects extends Component {
                 This is a key-board based fun music project. I did this when I started to learn JavaScript with udemy.
             </CardText>
               <CardActions border style={{ display: 'flex' }}>
-                <Button style={button} onClick={this.clickToCircleGithub} colored>GitHub</Button>
+                <Button style={button} onClick={this.handleClickGithuCircle} colored>GitHub</Button>
                 <Button style={button} onClick={this.clickToCircle} colored>Demo</Button>
                 <span style={ShareStyle}>
                   <div className="Demo__some-network">
@@ -261,12 +275,12 @@ class Projects extends Component {
 
           {/* Project 1 */}
           <Card shadow={5} style={{ minWidth: '450', margin: '10px 40px' }} >
-            <CardTitle style={styles4}>  </CardTitle>
+            <CardTitle style={styles4}>   </CardTitle>
             <CardText style={textArea}>
               This is a project which I did when I started to learn BootStrap with udemy.
           </CardText>
             <CardActions border style={{ display: 'flex' }}>
-              <Button style={button} onClick={this.clickToPerfectMatchGithub} colored>GitHub</Button>
+              <Button style={button} onClick={this.handleClickGithubPerfectMatch} colored>GitHub</Button>
               <Button style={button} onClick={this.clickToPerfectMatch} colored>Demo</Button>
               <span style={ShareStyle}>
                 <div className="Demo__some-network">
@@ -303,13 +317,13 @@ class Projects extends Component {
 
           {/* Project 1 */}
           <Card shadow={5} style={{ minWidth: '450', margin: '10px 40px' }} >
-            <CardTitle style={styles5}>  </CardTitle>
+            <CardTitle style={styles5}> SwedishSummer </CardTitle>
             <CardText style={textArea}>
               I did this project as my 3rd individual project during the course WordPress.
             </CardText>
             <CardActions border style={{ display: 'flex' }}>
-              <Button style={button} colored>GitHub</Button>
-              <Button style={button} colored>Demo</Button>
+              <Button style={button} onClick={this.handleClickGithubSwedishSummer} colored>GitHub</Button>
+              <Button style={button}> </Button>
               <span style={ShareStyle}>
                 <div className="Demo__some-network">
                   <FacebookShareButton
