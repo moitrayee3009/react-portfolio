@@ -1,11 +1,8 @@
-# [YouTube Tutorial](https://www.youtube.com/playlist?list=PL3KAvm6JMiowqFTXj3oPQkhP7aCgRHFTm)
-I created a Youtube code along tutorial for this project. Click the link above to view!
-
-# react-portfolio-starter
-A React based personal portfolio app using create-react-app and React Router v4.
+# react-portfolio
+This is the react version of my portfolio.
 
 # Tools
-* create-react-app cli
+* create-react-app 
 * React MDL material design
 * React Router v4
 
