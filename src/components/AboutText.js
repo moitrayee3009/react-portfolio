@@ -7,10 +7,10 @@ class AboutText extends Component {
   render() {
     return (
       <div>
-        <h3 style={{ fontsize: '1em', fontweight: '500', color: 'teal', marginbottom: '0' }}>I'm a Stockholm based full-stack web developer</h3>
+        <h3 style={{ fontsize: '1em', fontweight: '500', color: 'teal', marginbottom: '0' }}>I'm a Stockholm based front-end developer</h3>
         <hr style={{ marginRight: '10px' }} />
         <P>I have serious passion for UI effects, animations and creating dynamic user experiences.</P>
-        <P> My goal is to become a successful web developer and work in a company
+        <P> My goal is to become a successful front-end developer and work in a company
             that can offer me different projects so that I can deepen my knowledge within the programming area.</P>
         <div className="social-links">
           <a href="mailto:moitrayee3009@gmail.com" className="button button-icon" title="mail: moitrayee3009@gmail.com">

@@ -9,7 +9,7 @@ class Chart extends Component {
             <div className="chart-container">
                 <Bar
                     data={{
-                        labels: ["HTML5", "CSS3", "JavaScript", "React", "jQuery", "Bootstrap", "NodeJs", "ExpreeJs", "WordPress"],
+                        labels: ["HTML5", "CSS3", "JavaScript", "React", "jQuery", "Bootstrap", "NodeJs", "ExpressJs", "WordPress"],
                         datasets: [{
                             label: 'Level of skills',
                             data: [75, 55, 50, 35, 30, 30, 40, 40, 35, 100],

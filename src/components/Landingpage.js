@@ -32,9 +32,9 @@ class Landing extends Component {
             />
 
             <BannerText>
-              <H1>Full Stack Web Developer</H1>
+              <H1>Front-End Developer</H1>
 
-              <Hr primary />
+              <Hr style={{ marginTop: '15px' }} primary />
 
               <BannerTextP>HTML5/CSS3 | JavaScript | React | NodeJS  </BannerTextP>
 

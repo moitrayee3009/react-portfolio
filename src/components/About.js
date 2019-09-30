@@ -29,7 +29,7 @@ class About extends Component {
           <Cell style={rightColum} col={8}>
             <h3>Skills</h3>
             <Chart />
-            <Hr />
+            <Hr style={{ marginTop: '50px' }} />
             <h3>Experience</h3>
             <Experience />
             <Hr />
