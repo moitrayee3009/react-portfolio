@@ -4,6 +4,8 @@ import { Header, Layout, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './components/Main';
 import { NavLink } from 'react-router-dom';
 import { Key } from './Key';
+//import ReactGA from 'react-ga';
+import { initGA, PageView } from './components/Tracking';
 
 
 const API = Key;
@@ -50,6 +52,8 @@ class App extends Component {
 
 
     componentDidMount() {
+        initGA('UA-149669886-1');
+        PageView();
         fetch(API)
             .then((res) => res.json())
             .then((json) => {
@@ -88,7 +92,7 @@ class App extends Component {
             <div style={{ height: '100vh', position: 'relative' }} className="demo-big-content">
                 {this.handleResize()}
                 {this.handleResizeTemp()}
-                <Layout>
+                <Layout >
                     <Header
 
                         title={<NavLink
