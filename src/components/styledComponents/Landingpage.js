@@ -33,7 +33,7 @@ class Landing extends Component {
 
               <Hr style={{ marginTop: "15px" }} primary />
 
-              <BannerTextP>React | JavaScript | NodeJS </BannerTextP>
+              <BannerTextP> React | JavaScript | NodeJS </BannerTextP>
 
               <div className="social-links">
                 <a
