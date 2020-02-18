@@ -1,23 +1,23 @@
-import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
-import AboutText from './AboutText';
-import Education from './Education';
-import Experience from './Experience';
-import Chart from './chart';
-import Hr from './styledComponents/Hr';
+import React, { Component } from "react";
+import { Grid, Cell } from "react-mdl";
+import AboutText from "./AboutText";
+import Education from "./Education";
+import Experience from "./Experience";
+import Chart from "./chart";
+import Hr from "./styledComponents/Hr";
+import H3 from "./styledComponents/H3";
 
 const grid = {
-  padding: '50px 15px'
+  padding: "50px 15px"
 };
 
 const rightColum = {
-  background: 'white',
-  color: 'black',
-  padding: '2em'
+  background: "white",
+  color: "black",
+  padding: "2em"
 };
 
 class About extends Component {
-
   render() {
     return (
       <div style={grid}>
@@ -27,18 +27,18 @@ class About extends Component {
             <Hr />
           </Cell>
           <Cell style={rightColum} col={8}>
-            <h3>Skills</h3>
-            <Chart />
-            <Hr style={{ marginTop: '50px' }} />
-            <h3>Experience</h3>
+            <H3>Experience</H3>
             <Experience />
-            <Hr />
-            <h3>Education</h3>
+            <Hr style={{ marginTop: "51px" }} />
+            <H3>Skills</H3>
+            <Chart />
+            <Hr style={{ marginTop: "50px" }} />
+            <H3>Education</H3>
             <Education />
           </Cell>
         </Grid>
       </div>
-    )
+    );
   }
 }
 

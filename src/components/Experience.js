@@ -35,7 +35,7 @@ class Experience extends Component {
     return (
       <Fragment>
         {this.state.experiences.map((experience, i) => (
-          <Grid style={{ marginTop: "30px" }} key={i}>
+          <Grid style={{ marginTop: "0" }} key={i}>
             {/* <Wrapper> */}
             <Cell col={4}>
               <p>
