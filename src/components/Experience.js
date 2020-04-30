@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from "react";
-import { Grid, Cell } from "react-mdl";
+import React, { Component, Fragment } from 'react'
+import { Grid, Cell } from 'react-mdl'
 // import styled from 'styled-components';
 
 // const Wrapper = styled.section`
@@ -17,25 +17,31 @@ class Experience extends Component {
   state = {
     experiences: [
       {
-        jobStartYear: "November 2019",
-        jobEndYear: "March 2020",
-        jobName: "Front End Developer Intern",
-        company: "Accomplice.se"
+        jobStartYear: 'April 2020',
+        jobEndYear: 'May 2020',
+        jobName: 'ExamensArbete (Final project)',
+        company: 'Accomplice.se'
       },
       {
-        jobStartYear: "June 2010",
-        jobEndYear: "December 2011",
-        jobName: "Statistical programmer(SAS)",
-        company: "Shafi Consultancy Ltd. Bangladesh."
+        jobStartYear: 'November 2019',
+        jobEndYear: 'March 2020',
+        jobName: 'Front End Developer Intern',
+        company: 'Accomplice.se'
+      },
+      {
+        jobStartYear: 'June 2010',
+        jobEndYear: 'December 2011',
+        jobName: 'Statistical programmer(SAS)',
+        company: 'Shafi Consultancy Ltd. Bangladesh.'
       }
     ]
-  };
+  }
 
   render() {
     return (
       <Fragment>
         {this.state.experiences.map((experience, i) => (
-          <Grid style={{ marginTop: "0" }} key={i}>
+          <Grid style={{ marginTop: '0' }} key={i}>
             {/* <Wrapper> */}
             <Cell col={4}>
               <p>
@@ -43,15 +49,15 @@ class Experience extends Component {
               </p>
             </Cell>
             <Cell col={8}>
-              <h4 style={{ marginTop: "0px" }}>{experience.jobName}</h4>
-              <p className="company">{experience.company}</p>
+              <h4 style={{ marginTop: '0px' }}>{experience.jobName}</h4>
+              <p className='company'>{experience.company}</p>
             </Cell>
             {/* </Wrapper> */}
           </Grid>
         ))}
       </Fragment>
-    );
+    )
   }
 }
 
-export default Experience;
+export default Experience
