@@ -409,7 +409,7 @@ class Projects extends Component {
           <Card shadow={5} style={{ minWidth: '450', margin: '10px 40px' }}>
             <CardTitle style={styles6}> Botanist House </CardTitle>
             <CardText style={textArea}>
-              I am doing this project as my thesis project.
+              I have done this as my thesis project.
             </CardText>
             <CardActions border style={{ display: 'flex' }}>
               <Button
@@ -492,7 +492,7 @@ class Projects extends Component {
           <Card shadow={5} style={{ minWidth: '450', margin: '10px 40px' }}>
             <CardTitle style={styles6}> Botanist House </CardTitle>
             <CardText style={textArea}>
-              I am doing this project as my thesis project.
+              I have done this as my thesis project.
             </CardText>
             <CardActions border style={{ display: 'flex' }}>
               <Button
