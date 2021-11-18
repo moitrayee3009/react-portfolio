@@ -17,14 +17,14 @@ class Experience extends Component {
   state = {
     experiences: [
       {
-        jobStartYear: 'April 2020',
-        jobEndYear: 'May 2020',
+        jobStartYear: 'March 30, 2020',
+        jobEndYear: 'May 15, 2020',
         jobName: 'ExamensArbete (Final project)',
         company: 'Accomplice.se'
       },
       {
-        jobStartYear: 'November 2019',
-        jobEndYear: 'March 2020',
+        jobStartYear: 'November 11, 2019',
+        jobEndYear: 'March 27, 2020',
         jobName: 'Front End Developer Intern',
         company: 'Accomplice.se'
       },

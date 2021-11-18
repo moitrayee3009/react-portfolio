@@ -13,6 +13,7 @@ class Chart extends Component {
               'JavaScript',
               'React',
               'Vue',
+              'TypeScript',
               'jQuery',
               'Bootstrap',
               'NodeJs',
@@ -22,13 +23,14 @@ class Chart extends Component {
             datasets: [
               {
                 label: 'Level of skills',
-                data: [75, 70, 50, 45, 25, 20, 30, 40, 40, 55, 100],
+                data: [75, 70, 50, 55, 30, 30, 20, 30, 40, 40, 55, 100],
                 backgroundColor: [
                   'rgb(255, 99, 132)',
                   'rgb(54, 162, 235)',
                   'rgb(255, 206, 86)',
                   'rgb(75, 192, 192)',
                   'rgb(54, 162, 235)',
+                  'rgb(161, 190, 116)',
                   'rgb(153, 102, 255)',
                   'rgb(143, 200, 55)',
                   'rgb(134, 101, 54)',
