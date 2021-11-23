@@ -1,27 +1,58 @@
-import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
-
+import React, { Component, Fragment } from 'react'
+import { Grid, Cell } from 'react-mdl'
 
 class Education extends Component {
-
   state = {
-    startYearKYH: '2018',
-    endYearKYH: '2020',
-    schoolNameKYH: 'KYH Yrkeshögskola, Stockholm, Sweden',
-    schoolDescriptionKYH: 'Front-End Development.',
-
-    startYear: '2002',
-    endYear: '2007',
-    schoolName: 'Shahjalal University of Science and Technology, Bangladesh',
-    schoolDescription: 'Bachelor(hons) in Statistics.',
-
-    startYearMS: '2008',
-    endYearMS: '2009',
-    schoolDescriptionMS: 'Masters in Statistics.'
+    educations: [
+      {
+        startYear: '2018',
+        endYear: '2020',
+        schoolName: 'KYH Yrkeshögskola, Stockholm, Sweden',
+        schoolDescription: 'Front-End Development.'
+      },
+      {
+        startYear: '2013',
+        endYear: 'incomplete',
+        schoolName: 'Karolinska Institutet, Stockholm, Sweden',
+        schoolDescription: 'Health Informatics.'
+      },
+      {
+        startYear: '2008',
+        endYear: '2009',
+        schoolName:
+          'Shahjalal University of Science and Technology, Bangladesh',
+        schoolDescription: 'Masters in Statistics.'
+      },
+      {
+        startYear: '2002',
+        endYear: '2007',
+        schoolName:
+          'Shahjalal University of Science and Technology, Bangladesh',
+        schoolDescription: 'Bachelor(hons) in Statistics.'
+      }
+    ]
   }
   render() {
     return (
-      <Grid className="section" style={{ marginTop: '30px' }}>
+      <Fragment>
+        {this.state.educations.map((education, i) => (
+          <Grid className='section' style={{ marginTop: '30px' }} key={i}>
+            <Cell col={4}>
+              <p style={{ fontSize: '1.3em' }}>
+                {education.startYear} - {education.endYear}
+              </p>
+            </Cell>
+            <Cell col={8}>
+              <h4 style={{ marginTop: '0px' }}>{education.schoolName}</h4>
+              <p style={{ fontSize: '1.5em', color: 'purple' }}>
+                {education.schoolDescription}
+              </p>
+            </Cell>
+          </Grid>
+        ))}
+      </Fragment>
+
+      /* <Grid className="section" style={{ marginTop: '30px' }}>
 
         <Cell col={4}>
           <p>{this.state.startYearKYH} - {this.state.endYearKYH}</p>
@@ -29,12 +60,11 @@ class Education extends Component {
         <Cell col={8}>
           <h4 style={{ marginTop: '0px' }}>{this.state.schoolNameKYH}</h4>
           <p>{this.state.schoolDescriptionKYH}</p>
-        </Cell>
+        </Cell> */
 
+      /*Bangladesh  */
 
-        {/*Bangladesh  */}
-
-        <Cell col={4}>
+      /* <Cell col={4}>
           <p>{this.state.startYearMS} - {this.state.endYearMS}</p>
         </Cell>
         <Cell col={8}>
@@ -51,9 +81,9 @@ class Education extends Component {
         </Cell>
 
 
-      </Grid>
+      </Grid> */
     )
   }
 }
 
-export default Education;
+export default Education
