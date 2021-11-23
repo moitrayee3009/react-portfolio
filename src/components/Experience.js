@@ -51,7 +51,7 @@ class Experience extends Component {
           <Grid style={{ marginTop: '0' }} key={i}>
             {/* <Wrapper> */}
             <Cell col={4}>
-              <p style={{ fontSize: '1.2em' }}>
+              <p style={{ fontSize: '1em' }}>
                 {experience.jobStartYear} - {experience.jobEndYear}
               </p>
             </Cell>

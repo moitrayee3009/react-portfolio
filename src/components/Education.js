@@ -38,13 +38,13 @@ class Education extends Component {
         {this.state.educations.map((education, i) => (
           <Grid className='section' style={{ marginTop: '30px' }} key={i}>
             <Cell col={4}>
-              <p style={{ fontSize: '1.3em' }}>
+              <p style={{ fontSize: '1em' }}>
                 {education.startYear} - {education.endYear}
               </p>
             </Cell>
             <Cell col={8}>
               <h4 style={{ marginTop: '0px' }}>{education.schoolName}</h4>
-              <p style={{ fontSize: '1.5em', color: 'purple' }}>
+              <p style={{ fontSize: '1.1em', color: 'purple' }}>
                 {education.schoolDescription}
               </p>
             </Cell>
