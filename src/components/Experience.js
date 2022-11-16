@@ -19,8 +19,8 @@ class Experience extends Component {
     experiences: [
       {
         jobStartYear: 'November 23, 2021',
-        jobEndYear: 'Present',
-        jobName: 'ReactJs Developer Intern',
+        jobEndYear: 'March 22, 2022',
+        jobName: 'Frontend Developer Intern',
         company: 'Minimumque.com'
       },
       {
@@ -36,10 +36,16 @@ class Experience extends Component {
         company: 'Accomplice.se'
       },
       {
-        jobStartYear: 'June 2010',
+        jobStartYear: 'June 2011',
         jobEndYear: 'December 2011',
         jobName: 'Statistical programmer(SAS)',
         company: 'shaficonsultancy.com'
+      },
+      {
+        jobStartYear: 'December 2010',
+        jobEndYear: 'May 2011',
+        jobName: 'Customer Relation Officer',
+        company: 'The Dhaka Mercantile Co-Operative Bank Ltd, Bangladesh'
       }
     ]
   }
@@ -56,7 +62,9 @@ class Experience extends Component {
               </p>
             </Cell>
             <Cell col={8}>
-              <h4 style={{ marginTop: '0px' }}>{experience.jobName}</h4>
+              <h4 style={{ marginTop: '0px', lineHeight: '25px' }}>
+                {experience.jobName}
+              </h4>
               <p className='company'>
                 <A href={`https://${experience.company}/`} target='_blank'>
                   {experience.company.split('.')[0]}
