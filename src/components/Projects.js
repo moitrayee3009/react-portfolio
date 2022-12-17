@@ -17,6 +17,7 @@ import PerfectMatch from './images/perfectmatch.png'
 import Wordpress from './images/wordpress.JPG'
 import Tensity from './images/tensity.png'
 import BotanistHouse from './images/botanisthouse.png'
+import MoviesRQ from './images/moviesrq.png'
 
 import { FacebookShareButton, LinkedinShareButton } from 'react-share'
 import { FacebookIcon, LinkedinIcon } from 'react-share'
@@ -33,6 +34,14 @@ const styles2 = {
   color: '#fff',
   height: '176px',
   background: `url(${Background})`,
+  backgroundPosition: 'center',
+  backgroundSize: 'cover'
+}
+
+const stylesMoviesRQ = {
+  color: '#fff',
+  height: '176px',
+  background: `url(${MoviesRQ})`,
   backgroundPosition: 'center',
   backgroundSize: 'cover'
 }
@@ -112,6 +121,11 @@ class Projects extends Component {
     window.open('http://first_project.surge.sh/', '_blank')
   }
 
+  clickToMoviesWtRQ(e) {
+    e.preventDefault()
+    window.open('https://movies_with_react_query.surge.sh/', '_blank')
+  }
+
   clickToQuire(e) {
     e.preventDefault()
     window.open('http://quire-pisces.surge.sh/index.html', '_blank')
@@ -132,6 +146,14 @@ class Projects extends Component {
   handleClickGithubLandingpage(e) {
     e.preventDefault()
     window.open('https://github.com/moitrayee3009/LandingPage', '_blank')
+  }
+
+  handleClickGithubMoviesWithRQ(e) {
+    e.preventDefault()
+    window.open(
+      'https://github.com/moitrayee3009/Movies_With_React_Query',
+      '_blank'
+    )
   }
 
   handleClickGithuQuire(e) {
@@ -458,6 +480,49 @@ class Projects extends Component {
               Accomplice.se. Tech stack was Gatsby and Firebase.
             </CardText>
             <CardActions border style={{ display: 'flex' }}>
+              <span style={ShareStyle}>
+                <div className='Demo__some-network'>
+                  <FacebookShareButton
+                    url={shareUrlFacebook}
+                    quote={titleFacebook}
+                    className='Demo__some-network__share-button'
+                  >
+                    <FacebookIcon size={32} round />
+                  </FacebookShareButton>
+                </div>
+
+                <div className='Demo__some-network'>
+                  <LinkedinShareButton
+                    url={shareUrlLinkedIn}
+                    title={titleLinkedin}
+                    windowWidth={750}
+                    windowHeight={600}
+                    className='Demo__some-network__share-button'
+                  >
+                    <LinkedinIcon size={32} round />
+                  </LinkedinShareButton>
+                </div>
+              </span>
+            </CardActions>
+          </Card>
+
+          {/* Project 2 */}
+          <Card shadow={5} style={{ minWidth: '450', margin: '10px 40px' }}>
+            <CardTitle style={stylesMoviesRQ}> </CardTitle>
+            <CardText style={textArea}>
+              I have created this web application with React Query.
+            </CardText>
+            <CardActions border style={{ display: 'flex' }}>
+              <Button
+                style={button}
+                onClick={this.handleClickGithubMoviesWithRQ}
+                colored
+              >
+                GitHub
+              </Button>
+              <Button style={button} onClick={this.clickToMoviesWtRQ} colored>
+                Demo
+              </Button>
               <span style={ShareStyle}>
                 <div className='Demo__some-network'>
                   <FacebookShareButton
