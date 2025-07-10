@@ -16,15 +16,15 @@ class AboutText extends Component {
           I'm a Stockholm based front-end developer
         </h3>
         <hr style={{ marginRight: '10px' }} />
-        <P>
-          I have serious passion for UI effects and creating dynamic user
+        <p style={{ paddingBottom: '5px', fontWeight: '600' }}>
+          I'm passionate about UI effects and crafting dynamic, engaging user
           experiences.
-        </P>
+        </p>
         <P>
           {' '}
-          My goal is to become a successful front-end developer and work in a
-          company that can offer me different projects so that I can deepen my
-          knowledge within the programming area.
+          My goal is to grow as a front-end developer by working with a team
+          that offers diverse and challenging projects, helping me continually
+          expand my skills and expertise in modern web development.
         </P>
         <div className='social-links'>
           <a

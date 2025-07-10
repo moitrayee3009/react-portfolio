@@ -18,20 +18,32 @@ class Experience extends Component {
   state = {
     experiences: [
       {
-        jobStartYear: 'November 23, 2021',
-        jobEndYear: 'March 22, 2022',
+        jobStartYear: 'October, 2023',
+        jobEndYear: 'February, 2025',
+        jobName: 'FullStack Developer ',
+        company: 'QBank DAM'
+      },
+      {
+        jobStartYear: 'April, 2022',
+        jobEndYear: 'September, 2023',
+        jobName: 'Frontend Developer',
+        company: 'Atrai Lab'
+      },
+      {
+        jobStartYear: 'November, 2021',
+        jobEndYear: 'March, 2022',
         jobName: 'Frontend Developer Intern',
         company: 'Minimumque.com'
       },
       {
-        jobStartYear: 'March 30, 2020',
-        jobEndYear: 'May 15, 2020',
+        jobStartYear: 'March, 2020',
+        jobEndYear: 'May, 2020',
         jobName: 'ExamensArbete (Final project)',
         company: 'Accomplice.se'
       },
       {
-        jobStartYear: 'November 11, 2019',
-        jobEndYear: 'March 27, 2020',
+        jobStartYear: 'November, 2019',
+        jobEndYear: 'March, 2020',
         jobName: 'Front End Developer Intern',
         company: 'Accomplice.se'
       },
@@ -55,23 +67,23 @@ class Experience extends Component {
       <Fragment>
         {this.state.experiences.map((experience, i) => (
           <Grid style={{ marginTop: '0' }} key={i}>
-            {/* <Wrapper> */}
-            <Cell col={4}>
-              <p style={{ fontSize: '1em' }}>
+            <Cell col={4} phone={12} tablet={12}>
+              <p className='experience-year'>
                 {experience.jobStartYear} - {experience.jobEndYear}
               </p>
             </Cell>
-            <Cell col={8}>
-              <h4 style={{ marginTop: '0px', lineHeight: '25px' }}>
-                {experience.jobName}
-              </h4>
+            <Cell col={8} phone={12} tablet={12}>
+              <h4 className='experience-job'>{experience.jobName}</h4>
               <p className='company'>
-                <A href={`https://${experience.company}/`} target='_blank'>
+                <A
+                  href={`https://${experience.company}/`}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
                   {experience.company.split('.')[0]}
                 </A>
               </p>
             </Cell>
-            {/* </Wrapper> */}
           </Grid>
         ))}
       </Fragment>

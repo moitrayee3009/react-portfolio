@@ -387,3 +387,37 @@ iframe html body {
 .mdl-menu__container.is-visible {
   top: 200px !important;
 }
+
+/* === Experience Section Styles === */
+
+.experience-year {
+  font-size: 1em;
+  margin: 0;
+}
+
+.experience-job {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+.company {
+  font-size: 1em;
+  margin: 0;
+}
+
+/* === Responsive Adjustments === */
+
+@media (max-width: 768px) {
+  .experience-year {
+    font-size: 0.9em;
+  }
+
+  .experience-job {
+    font-size: 1em;
+  }
+
+  .company {
+    font-size: 0.9em;
+  }
+}
